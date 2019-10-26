@@ -1,0 +1,157 @@
+﻿@{
+    Layout = "~/Views/Bldgs/_BldgsLayout.cshtml";
+}
+
+<div class="">
+    <!-- Make this a button to change the values of the table. -->
+    <div class="row align-items-center">
+        <img class="" src="@Url.Content("~/Images/gear-up.png")" />
+        <h4 class="d-inline ml-5">Gear Up</h4>
+    </div>
+    <p class="lead mt-3">
+        Turn this Mortar into a Multi Mortar that makes a bigger splash with burst fire!
+    </p>
+</div>
+
+
+<div class="row align-items-end">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-4">
+        <img style="max-height: 160px" class="icon-large" alt="Level 1" src="@Url.Content("~/Images/mortar-1.png")" />
+        <div class="lead mt-1 th-3">Level 1</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-4">
+        <img style="max-height: 160px" class="icon-large" alt="Level 2" src="@Url.Content("~/Images/mortar-2.png")" />
+        <div class="lead mt-1 th-4">Level 2</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-4">
+        <img style="max-height: 160px" class="icon-large" alt="Level 3" src="@Url.Content("~/Images/mortar-3.png")" />
+        <div class="lead mt-1 th-5">Level 3</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-4">
+        <img style="max-height: 160px" class="icon-large" alt="Level 4" src="@Url.Content("~/Images/mortar-4.png")" />
+        <div class="lead mt-1 th-6">Level 4</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-4">
+        <img style="max-height: 160px" class="icon-large" alt="Level 5" src="@Url.Content("~/Images/mortar-5.png")" />
+        <div class="lead mt-1 th-7">Level 5</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-4">
+        <img style="max-height: 160px" class="icon-large" alt="Level 6" src="@Url.Content("~/Images/mortar-6.png")" />
+        <div class="lead mt-1 th-8">Level 6</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-4">
+        <img style="max-height: 160px" class="icon-large" alt="Level 7" src="@Url.Content("~/Images/mortar-7.png")" />
+        <div class="lead mt-1 th-9">Level 7</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-4">
+        <img style="max-height: 160px" class="icon-large" alt="Level 8" src="@Url.Content("~/Images/mortar-8.png")" />
+        <div class="lead mt-1 th-10">Level 8</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-4">
+        <img style="max-height: 160px" class="icon-large" alt="Level 9" src="@Url.Content("~/Images/mortar-9.png")" />
+        <div class="lead mt-1 th-11">Level 9</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-4">
+        <img style="max-height: 160px" class="icon-large" alt="Level 10" src="@Url.Content("~/Images/mortar-10.png")" />
+        <div class="lead mt-1 th-11">Level 10</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-4">
+        <img style="max-height: 160px" class="icon-large" alt="Level 11" src="@Url.Content("~/Images/mortar-11.png")" />
+        <div class="lead mt-1 th-12">Level 11</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-4">
+        <img style="max-height: 160px" class="icon-large" alt="Level 12" src="@Url.Content("~/Images/mortar-12.png")" />
+        <div class="lead mt-1 th-12">Level 12</div>
+    </div>
+</div>
+<table class="table table-hover table-responsive-md text-center mt-4">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Level</th>
+            <th scope="col">DPS</th>
+            <th scope="col">DPH</th>
+            <th scope="col"><img src="@Url.Content("~/Images/heart.png")" alt="Hitpoints "></th>
+            <th scope="col"><img src="@Url.Content("~/Images/gold.png")" alt="Gold"></th>
+            <th scope="col" style="min-width: 105px;"><img src="@Url.Content("~/Images/clock.png")" alt=""></th>
+            <th scope="col"><img src="@Url.Content("~/Images/xp.png")" alt=""></th>
+            <th scope="col">TH</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var levels in ViewBag.Levels)
+        {
+            <tr>
+                <td scope="row">@levels.Lvl</td>
+                <td>@levels.DPS</td>
+                <td>@levels.DPH</td>
+                <td>@levels.HP</td>
+                <td>@levels.Cost</td>
+                <td>@levels.UpTime</td>
+                <td>@levels.XP</td>
+                <td class="th-@levels.TH">@levels.TH</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+
+<table class="table text-center mt-4">
+    <thead class="">
+        <tr>
+            <th scope="col"><img src="@Url.Content("~/Images/footprint.png")" alt="Size" /></th>
+            <th scope="col">Range</th>
+            <th scope="col"><img src="@Url.Content("~/Images/attack.png")" alt="Attack "></th>
+            <th scope="col"><img src="@Url.Content("~/Images/attack-type.png")" alt="Attack Type"></th>
+            <th scope="col" style="min-width: 105px;"><img src="@Url.Content("~/Images/target.png")" alt="Target"></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td scope="row">3x3</td>
+            <td>4-11 Tiles</td>
+            <td>5 s</td>
+            <td>Area Splash</td>
+            <td>Ground</td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="table table-responsive-md text-center mt-4">
+    <thead class="">
+        <tr>
+            <th class="th-1" scope="col">TH 1</th>
+            <th class="th-2" scope="col">TH 2</th>
+            <th class="th-3" scope="col">TH 3</th>
+            <th class="th-4" scope="col">TH 4</th>
+            <th class="th-5" scope="col">TH 5</th>
+            <th class="th-6" scope="col">TH 6</th>
+            <th class="th-7" scope="col">TH 7</th>
+            <th class="th-8" scope="col">TH 8</th>
+            <th class="th-9" scope="col">TH 9</th>
+            <th class="th-10" scope="col">TH 10</th>
+            <th class="th-11" scope="col">TH 11</th>
+            <th class="th-12" scope="col">TH 12</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr class="font-weight-bold">
+            <td scope="row">0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>8</td>
+        </tr>
+    </tbody>
+</table>
+

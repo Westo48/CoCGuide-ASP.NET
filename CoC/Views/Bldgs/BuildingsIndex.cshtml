@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "~/Views/Bldgs/_BldgsIndexLayout.cshtml";
+}
+
+
+<div class="row align-items-end">
+    <div class="col-12 col-md-4 col-xl text-center mt-4">
+        <a href="@Url.Action("ArmyBldgsIndex", "ArmyBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Army Buildings" src="@Url.Content("~/Images/clan-castle-8.png")" /></a>
+        <div class="lead mt-1">Army</div>
+    </div>
+    <div class="col-12 col-md-4 col-xl text-center mt-4">
+        <a href="@Url.Action("DefenseBldgsIndex", "DefenseBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Defenses" src="@Url.Content("~/Images/cannon-17.png")" /></a>
+        <div class="lead mt-1">Defenses</div>
+    </div>
+    <div class="col-12 col-md-4 col-xl text-center mt-4">
+        <a href="@Url.Action("ResourceBldgsIndex", "ResourceBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Resource Buildings" src="@Url.Content("~/Images/dark-elixir-storage-7.png")" /></a>
+        <div class="lead mt-1">Resources</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl text-center mt-4">
+        <a href="@Url.Action("TrapBldgsIndex", "TrapBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Traps" src="@Url.Content("~/Images/giant-bomb-5.png")" /></a>
+        <div class="lead mt-1">Traps</div>
+    </div>
+    <div class="col-12 col-md-6 col-xl text-center mt-4">
+        <a href="@Url.Action("OtherBldgsIndex", "OtherBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Other" src="@Url.Content("~/Images/town-hall-12.png")" /></a>
+        <div class="lead mt-1">Other</div>
+    </div>
+</div>

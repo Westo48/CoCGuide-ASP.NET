@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "~/Views/Bldgs/_BldgsIndexLayout.cshtml";
+}
+
+
+<h1 class="display-4 mt-3">Home Village</h1>
+
+<div class="row align-items-end">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 text-center mt-4">
+        <a href="@Url.Action("TownHall", "OtherBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Town Hall" src="@Url.Content("~/Images/town-hall-12.png")" /></a>
+        <div class="lead mt-1">Town Hall</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 text-center mt-4">
+        <a href="@Url.Action("BuilderHut", "OtherBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Builder Hut" src="@Url.Content("~/Images/builder-hut-1.png")" /></a>
+        <div class="lead mt-1">Builder Hut</div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center mt-4">
+        <a href="@Url.Action("MasterBuilderHut", "OtherBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Master Builder Hut" src="@Url.Content("~/Images/master-builder-hut-1.png")" /></a>
+        <div class="lead mt-1">Master Builder Hut</div>
+    </div>
+</div>
+
+<h1 class="display-4 mt-4">Builder Base</h1>

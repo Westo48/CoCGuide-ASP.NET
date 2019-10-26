@@ -1,0 +1,19 @@
+﻿@{
+    Layout = "~/Views/Army/_ArmyIndexLayout.cshtml";
+}
+
+
+<div class="row align-items-end">
+    <div class="col-12 col-md-4 col-xl text-center mt-4">
+        <a href="@Url.Action("TroopIndex", "Troop")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Troops" src="@Url.Content("~/Images/barbarian.png")" /></a>
+        <div class="lead mt-1">Troops</div>
+    </div>
+    <div class="col-12 col-md-4 col-xl text-center mt-4">
+        <a href="@Url.Action("SpellIndex", "Spell")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Spells" src="@Url.Content("~/Images/spell-clone.png")" /></a>
+        <div class="lead mt-1">Spells</div>
+    </div>
+    <div class="col-12 col-md-4 col-xl text-center mt-4">
+        <a href="@Url.Action("HeroIndex", "Hero")" class="text-dark"><img style="height: 160px" class="icon-large" alt="Heroes" src="@Url.Content("~/Images/hero-barbarian-king.png")" /></a>
+        <div class="lead mt-1">Heroes</div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "~/Views/Army/_ArmyIndexLayout.cshtml";
+}
+
+
+<h1 class="display-4 mt-3">Home Village</h1>
+
+<div class="row align-items-end">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 text-center mt-4">
+        <a href="@Url.Action("BarbarianKing", "Hero")" class="text-dark"><img style="max-height: 140px" class="icon-large" alt="Barbarian King" src="@Url.Content("~/Images/hero-barbarian-king.png")" /></a>
+        <div class="lead mt-1">Barbarian King</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 text-center mt-4">
+        <a href="@Url.Action("ArcherQueen", "Hero")" class="text-dark"><img style="max-height: 140px" class="icon-large" alt="Archer Queen" src="@Url.Content("~/Images/hero-archer-queen.png")" /></a>
+        <div class="lead mt-1">Archer Queen</div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center mt-4">
+        <a href="@Url.Action("GrandWarden", "Hero")" class="text-dark"><img style="max-height: 140px" class="icon-large" alt="Grand Warden" src="@Url.Content("~/Images/hero-grand-warden.png")" /></a>
+        <div class="lead mt-1">Grand Warden</div>
+    </div>
+</div>
+
+<h1 class="display-4 mt-4">Builder Base</h1>
+
+
+<div class="row align-items-end">
+    <div class="col-12 text-center mt-4">
+        <a href="@Url.Action("BattleMachine", "Hero")" class="text-dark"><img style="max-height: 140px" class="icon-large" alt="Battle Machine" src="@Url.Content("~/Images/hero-battle-machine.png")" /></a>
+        <div class="lead mt-1">Battle Machine</div>
+    </div>
+</div>

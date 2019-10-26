@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Clash Info";
+}
+
+
+<h1 class="jumbotron text-dark display-3">Clash Info</h1>
+
+<div class="row align-items-end">
+    <div class="col-12 col-md-4 col-xl text-center mt-4">
+        <a href="@Url.Action("BuildingsIndex", "Bldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Buildings" src="@Url.Content("~/Images/town-hall-12.png")" /></a>
+        <div class="lead mt-1">Buildings</div>
+    </div>
+    <div class="col-12 col-md-4 col-xl text-center mt-4">
+        <a href="@Url.Action("ArmyIndex", "Army")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Armhy" src="@Url.Content("~/Images/barbarian.png")" /></a>
+        <div class="lead mt-1">Army</div>
+    </div>
+    <div class="col-12 col-md-4 col-xl text-center mt-4">
+        <a href="@Url.Action("BuildingsIndex", "Bldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Info" src="@Url.Content("~/Images/witch.png")" /></a>
+        <div class="lead mt-1">Info</div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+﻿@{
+    Layout = "~/Views/Bldgs/_BldgsIndexLayout.cshtml";
+}
+
+
+<h1 class="display-4 mt-3">Home Village</h1>
+
+<div class="row align-items-end">
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 text-center mt-4">
+        <a href="@Url.Action("Bomb", "TrapBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Bomb" src="@Url.Content("~/Images/bomb-7.png")" /></a>
+        <div class="lead mt-1">Bomb</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 text-center mt-4">
+        <a href="@Url.Action("SpringTrap", "TrapBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Spring Trap" src="@Url.Content("~/Images/spring-trap-5.png")" /></a>
+        <div class="lead mt-1">Spring Trap</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 text-center mt-4">
+        <a href="@Url.Action("AirBomb", "TrapBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Air Bomb" src="@Url.Content("~/Images/air-bomb-5.png")" /></a>
+        <div class="lead mt-1">Air Bomb</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 text-center mt-4">
+        <a href="@Url.Action("GiantBomb", "TrapBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Giant Bomb" src="@Url.Content("~/Images/giant-bomb-5.png")" /></a>
+        <div class="lead mt-1">Giant Bomb</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 text-center mt-4">
+        <a href="@Url.Action("SeekingAirMine", "TrapBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Seeking Air Mine" src="@Url.Content("~/Images/seeking-air-mine-3.png")" /></a>
+        <div class="lead mt-1">Seeking Air Mine</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 text-center mt-4">
+        <a href="@Url.Action("SkeletonTrap", "TrapBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Skeleton Trap" src="@Url.Content("~/Images/skeleton-trap-3.png")" /></a>
+        <div class="lead mt-1">Skeleton Trap</div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center mt-4">
+        <a href="@Url.Action("TornadoTrap", "TrapBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Tornado Trap" src="@Url.Content("~/Images/tornado-trap-1.png")" /></a>
+        <div class="lead mt-1">Tornado Trap</div>
+    </div>
+</div>
+
+<h1 class="display-4 mt-4">Builder Base</h1>

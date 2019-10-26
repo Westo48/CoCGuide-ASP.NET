@@ -1,0 +1,35 @@
+﻿@{
+    Layout = "~/Views/Bldgs/_BldgsIndexLayout.cshtml";
+}
+
+
+<h1 class="display-4 mt-3">Home Village</h1>
+
+<div class="row align-items-end">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2 text-center mt-4">
+        <a href="@Url.Action("DarkElixirStorage", "ResourceBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Dark Elixir Storage" src="@Url.Content("~/Images/dark-elixir-storage-7.png")" /></a>
+        <div class="lead mt-1">Dark Elixir Storage</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2 text-center mt-4">
+        <a href="@Url.Action("DarkElixirDrill", "ResourceBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Dark Elixir Drill" src="@Url.Content("~/Images/dark-elixir-drill-7.png")" /></a>
+        <div class="lead mt-1">Dark Elixir Drill</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2 text-center mt-4">
+        <a href="@Url.Action("ElixirStorage", "ResourceBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Elixir Storage" src="@Url.Content("~/Images/elixir-storage-13.png")" /></a>
+        <div class="lead mt-1">Elixir Storage</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2 text-center mt-4">
+        <a href="@Url.Action("ElixirCollector", "ResourceBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Elixir Collector" src="@Url.Content("~/Images/elixir-collector-13.png")" /></a>
+        <div class="lead mt-1">Elixir Collector</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2 text-center mt-4">
+        <a href="@Url.Action("GoldStorage", "ResourceBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Gold Storage" src="@Url.Content("~/Images/gold-storage-13.png")" /></a>
+        <div class="lead mt-1">Gold Storage</div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2 text-center mt-4">
+        <a href="@Url.Action("GoldMine", "ResourceBldgs")" class="text-dark"><img style="max-height: 160px" class="icon-large" alt="Gold Mine" src="@Url.Content("~/Images/gold-mine-13.png")" /></a>
+        <div class="lead mt-1">Gold Mine</div>
+    </div>
+</div>
+
+<h1 class="display-4 mt-4">Builder Base</h1>
